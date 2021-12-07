@@ -8,14 +8,16 @@
 </head>
 <body>
     <script>
-        function solution(n){
-            let answer =0;
-          for(let i=1; i<=n; i++){ // <=해줘야 됨
-            answer = answer +i
-          }
-            return answer;
+        function solution(s,t){
+            let answer=0;
+            for(let x of s){
+                if(x===t)answer++;
+            }
+            return answer
         }
-        console.log(solution(2));
+        let str="COMPUTERPROGRAMMING";
+        console.log(solution(str,"G"))
+
     </script>
 </body>
 </html>

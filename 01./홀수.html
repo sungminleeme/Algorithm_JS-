@@ -11,14 +11,12 @@
         function solution (arr){
             let answer=[]; 
             let sum=0, min=Number.MAX_SAFE_INTEGER;
-            for(let x of arr){ //for of !
-            if(x%2===1){     
-                sum+=x; // sum=sum+x;
-                if(x<min) min=x;
+            for(let x of arr){ //for of
+                if(x%2===1) {  // 홀수 
+                    sum+=x;
+                    if(x<min)  min=x; 
+                }
             }
-        }
-        answer.push(sum);//배열에 더해줌
-        answer.push(min);
         return answer;
     }
     arr=[12,77,38,41,53,92,85]

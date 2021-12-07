@@ -8,16 +8,20 @@
 </head>
 <body>
     <script>
-        function solution(arr){
-            let answer,min=Number.MAX_SAFE_INTEGER;// min=arr[0]
-            for(let i=0 ; i<arr.length; i++){      // let i=1; i<arr.length; i++
-                if(arr[i]<min) min=arr[i]; //최소값
+        function solution(s){
+            let answer=""
+            for(let x of s){
+                if(x==="A") answer +="#";
+                else answer +=x;
             }
-            answer=min;
+            // let answer =s;
+            // answer = answer.replace(/A/g,"#") //정규표현식
+
             return answer;
         }
-        arr =[5,7,4,3,2,9,11]
-        console.log(solution(arr))
+
+        let str="BANANA";
+        console.log(solution(str))
     </script>
 </body>
 </html>

@@ -10,13 +10,13 @@
     <script>
         function solution(day,arr){
             let answer=0;
-            for(let x of arr){ //for of 배열
-                if(x%10===day) answer++; //10으로 나누면 한자리가 나머지로 나옴
-            }
+            for(let x of arr){  //for of 배열
+               if(x%10===day)answer++;                 //10으로 나누면 한자리가 나머지로 나옴
+            } 
             return answer;
         }
         arr=[25,23,11,47,53,17,33]
-        console.log(solution(5, arr));
+        console.log(solution(7, arr));
         
     </script>
 </body>
