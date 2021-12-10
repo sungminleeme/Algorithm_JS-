@@ -1,1 +1,1 @@
-# 인프런 Algorithm_JS
+#Algorithm_JS
